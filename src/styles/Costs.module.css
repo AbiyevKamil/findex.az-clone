@@ -1,0 +1,135 @@
+.costs {
+    padding: 30px 8vw;
+    margin-top: 80px;
+}
+
+.costs::before {
+    content: "";
+    background: url("https://findex.az/images/plane.svg"), url("https://findex.az/images/delivery-man.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 0, 20px 90%;
+    z-index: -2;
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    opacity: 0.06;
+}
+
+.costs_header {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: rgb(35, 155, 212);
+}
+
+.costs_top_header_1 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(36, 68, 114);
+}
+
+.costs_top_header_2 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(36, 68, 114);
+}
+
+.costs_top_header_2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: rgb(36, 68, 114);
+    display: block;
+    margin: 10px auto;
+}
+
+.container_top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    padding-top: 50px;
+}
+
+.costs_normal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.head {
+    color: rgb(36, 68, 114);
+    font-weight: 400;
+}
+
+.cost {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 6px 24px;
+    color: rgb(36, 68, 114);
+    letter-spacing: 1px;
+    transition: box-shadow 0.3s ease 0s, transform 0.3s ease 0s;
+    cursor: pointer;
+    min-width: 0;
+    margin: 15px 0;
+}
+
+.cost:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 6px 24px;
+    transform: scale(1.02);
+}
+
+.desc_container {
+    padding: 20px;
+    flex: 1;
+}
+
+.value_container {
+    justify-self: end;
+    padding: 20px;
+    border-left: 1px solid rgb(244, 244, 244);;
+}
+
+.container_bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+}
+
+.costs_bottom_header_1 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(36, 68, 114);
+    margin-top: 50px;
+}
+
+.costs_bottom_header_2 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(36, 68, 114);
+}
+
+.costs_bottom_header_2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: rgb(36, 68, 114);
+    display: block;
+    margin: 10px auto;
+}
+
+.desc {
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.value {
+    font-size: 22px;
+    font-weight: 500;
+}

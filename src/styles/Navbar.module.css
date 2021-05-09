@@ -1,0 +1,76 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0 8vw;
+    background-color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    position: absolute;
+    top: 46px;
+    right: 0;
+    left: 0;
+    z-index: 4;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
+}
+
+.navber_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+}
+
+.logo_link_navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 36px;
+    line-height: inherit;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-items: flex-end;
+}
+
+.links_container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links_container a {
+    text-decoration: none;
+    color: #656565;
+    cursor: pointer;
+    padding: 15px 24px 25px 24px;
+    transition: color 0.2s ease 0s;
+}
+
+.links_container a:hover {
+    color: #239bd4;
+}
+
+.link_active {
+    color: #239bd4;
+    border-bottom: 3px solid #239bd4;
+}
+
+.register_btn_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.register_btn_container * {
+    text-decoration: none;
+}
+
+.register_btn {
+    display: flex;
+}

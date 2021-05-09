@@ -1,0 +1,249 @@
+.contact {
+  margin-top: 80px;
+  padding: 50px 8vw;
+}
+
+.contact_container {
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.3), 2px -4px 15px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+}
+
+.contact_left {
+  padding: 40px 0 40px 40px;
+}
+
+.head {
+  color: rgb(36, 68, 114);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.contacts {
+  margin: 25px 0;
+}
+
+.phone_container {
+  display: flex;
+  align-items: center;
+  color: rgb(36, 68, 114);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.location_container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: rgb(36, 68, 114);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.mail_container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: rgb(36, 68, 114);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.icon_container {
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgb(36, 68, 114);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.name_field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  position: relative;
+}
+
+.email_field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  position: relative;
+}
+
+.phone_field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  position: relative;
+}
+
+.text_field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  position: relative;
+}
+
+.input {
+  -moz-appearance: textfield;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
+  transition: padding 0.3s linear;
+}
+
+.input:focus {
+  padding: 10px 12px;
+  background-color: #f2f2f2;
+}
+
+.name_field::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: rgb(35, 155, 212);
+  transition: width 0.3s ease 0s;
+  width: 0%;
+}
+
+.focused_name::after {
+  width: 100%;
+}
+
+.email_field::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: rgb(35, 155, 212);
+  transition: width 0.3s ease 0s;
+  width: 0%;
+}
+
+.focused_mail::after {
+  width: 100%;
+}
+
+.phone_field::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: rgb(35, 155, 212);
+  transition: width 0.2s ease 0s;
+  width: 0%;
+}
+
+.focused_phone::after {
+  width: 100%;
+}
+
+.text_field::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: rgb(35, 155, 212);
+  transition: width 0.3s ease 0s;
+  width: 0%;
+}
+
+.focused_text::after {
+  width: 100%;
+}
+
+.label {
+  color: rgb(36, 68, 114);
+  font-weight: 400;
+  transition: transform 0.2s linear;
+}
+
+.focused_name .label {
+  transform: translateY(-5px);
+}
+
+.focused_mail .label {
+  transform: translateY(-5px);
+}
+
+.focused_phone .label {
+  transform: translateY(-5px);
+}
+
+.focused_text .label {
+  transform: translateY(-5px);
+}
+
+.text_input {
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  resize: vertical;
+  transition: padding 0.2s linear;
+}
+
+.text_input:focus {
+  background-color: #f2f2f2;
+  padding: 10px 12px;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.submit_btn {
+  margin-top: 30px;
+  width: 70px;
+  background: rgb(35, 155, 212);
+  box-shadow: transparent 0px 0px 0px;
+  border: 0px solid transparent;
+  text-shadow: transparent 0px 0px 0px;
+  color: rgb(255, 255, 255);
+  padding: 8px 13px;
+  transition: background-color 0.3s ease 0s;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.submit_btn:hover {
+  background-color: rgb(58, 184, 241);
+}

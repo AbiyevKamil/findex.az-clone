@@ -1,0 +1,178 @@
+.calculator {
+    background-color: rgb(255, 255, 255);
+    padding: 24px;
+    border-radius: 12px;
+    width: 50%;
+}
+
+.header_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    flex: 1;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+}
+
+.header_middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.input_field {
+    display: flex;
+    align-items: center;
+    background: rgb(244, 244, 244);
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding-right: 5px;
+    transition: border-color 0.2s ease 0s;
+    margin: 20px auto;
+    position: relative;
+    border: 2px solid rgb(237, 237, 237);
+    width: 95%;
+}
+
+.cal_label {
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    z-index: 3;
+    background-color: #fff;
+}
+
+.cal_input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 13px 10px;
+    width: 72%;
+    border-right: 3px solid rgb(237, 237, 237);
+    font-size: 18px;
+}
+
+.cal_value {
+    position: absolute;
+    left: 76%;
+    font-size: 18px;
+}
+
+.btn_container {
+    flex: 1;
+    align-self: flex-end;
+}
+
+.btn {
+    background: rgba(36, 68, 114, 0.08);
+    box-shadow: transparent 0 0 0;
+    border: 0 solid transparent;
+    text-shadow: transparent 0 0 0;
+    margin: 0;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: rgb(36, 68, 114);
+    transition: background-color 0.2s ease 0s, color 0.2s ease 0s;
+    cursor: pointer;
+    -moz-appearance: textfield;
+}
+
+.cal_input::-webkit-inner-spin-button,
+.cal_input::-webkit-outer-spin-button {
+    display: none;
+    margin: 0;
+}
+
+.header_bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.liquid_check_container {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    align-items: center;
+}
+
+.liquid_check_container:hover {
+    cursor: pointer;
+}
+
+.cost {
+    justify-self: center;
+    align-self: center;
+    font-size: 4.2rem;
+    overflow-x: hidden;
+    width: 90%;
+    text-align: center;
+}
+
+.float {
+    font-size: 3rem;
+}
+
+.liquid_check_input {
+    transition: all 0.3s ease;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.liquid_check_label {
+    padding-left: 5px;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.liquid_check_input:checked {
+    color: rgb(36, 68, 114);
+    transform: scale(1.1);
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+}
+
+.focused_input_1 {
+    border: 2px solid #239bd4;
+    transition: all 0.3s ease;
+}
+
+.focused_input_2 {
+    border: 2px solid #239bd4;
+    transition: all 0.3s ease;
+}
+
+.focused_input_3 {
+    border: 2px solid #239bd4;
+    transition: all 0.3s ease;
+}
+
+.focused_input_4 {
+    border: 2px solid #239bd4;
+    transition: all 0.3s ease;
+}
+
+.cal_input::after,
+.cal_input::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background-color: rgb(36, 68, 114);
+    color: rgb(255, 255, 255);
+}
